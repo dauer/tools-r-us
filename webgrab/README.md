@@ -24,11 +24,11 @@ So you run it through webgrab to get only the table containing the schedule:
 
 webgrab takes 3 parameters:
 * -u &lt;url&gt; : The url you want to parse
-* -e &lt;element&gt; : The element you want to extract (XPATH/ CSS selector)
+* -e &lt;element&gt; : The element you want to extract (XPath / CSS selector)
 * -p : Include only print stylesheets
 
 ### Example ###
-The following code extracts the conference schedule table by specifying an CSS selector (you may specify XPath selector if that is your prefered dialect) that matches the element in the html document '#main table' from the specified website and save it in the file 'table.html'
+The following code extracts the conference schedule table by specifying a CSS selector (you may specify XPath selectors if that is your prefered dialect) that matches the element in the html document '#main table' from the specified website and save it in the file 'table.html'
 
 ./webgrab.groovy -u http://www.opensourcedays.org/2013/saturday -e "#main table" > table.html
 
