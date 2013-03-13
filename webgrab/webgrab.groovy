@@ -48,8 +48,8 @@ def styles  = ''
  * If '-p' option is specified only include print stylesheets
  */
 def css = ((options.p)
-        ? doc.select("[type~=css][media~=print]")
-        : doc.select("[type~=css]"))
+        ? doc.select("[rel=stylesheet][media~=print]")
+        : doc.select("[rel=stylesheet]"))
 
 for (s in css) {
     styles += s.toString() + "\n"
