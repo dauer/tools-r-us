@@ -2,10 +2,10 @@
 
 import org.jsoup.Jsoup
 
-def cli = new CliBuilder(usage:  'webgrab.groovy')
-cli.u(args:1, argName:'url',     'Grab specified url')
-cli.e(args:1, argName:'element', 'XPath/CSS selector for element to grab from html')
-cli.p(args:0, argName:'print',   'Select only print stylesheets')
+def cli = new CliBuilder(usage:  "webgrab.groovy")
+cli.u(args:1, argName:"url",     "Grab specified url")
+cli.e(args:1, argName:"element", "XPath/CSS selector for element to grab from html")
+cli.p(args:0, argName:"print",   "Select only print stylesheets")
 
 def options = cli.parse(args)
 if(!options.u || !options.e) {
@@ -23,7 +23,7 @@ try {
      * Not all websites specify absolute urls so we add a baseurl to make relative
      * links work
      */
-    baseUrl = '<base href="' + url.getHost() + '"/>'
+    baseUrl = "<base href=\"" + url.getHost() + "\"/>"
 
 } catch(e) {
     // Invalid URL specified, show error message then quit!
