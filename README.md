@@ -16,3 +16,7 @@ Misc bash scripts for fixing stuff.
 Every time I get a kernel upgrade Virtualbox breaks...
 
 This script fixes that problem
+
+#### drobo.sh ####
+
+A small bash script for mounting my Drobo NAS
