@@ -20,3 +20,7 @@ This script fixes that problem
 #### drobo.sh ####
 
 A small bash script for mounting my Drobo NAS
+
+### garmin-tools ###
+
+A collection of tools for working with data from Garmin sports watches.
