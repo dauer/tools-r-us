@@ -7,7 +7,7 @@ So I needed to split it up...
 
 ### Split ###
 
-The first thing to do is to split the .tcx (in this example: 20130804T132325.tcx) file into individual .tcx files each containing a lap.
+The first thing to do is to split the .tcx file (in this example: 20130804T132325.tcx) into individual .tcx files each containing a lap.
 If all trainings sessions are registered as the same lap, this script will not help you, I had my sessions registered with laps.
 
 The split.xsl XSLT script does that (I use the Saxon XSLT processor):
@@ -35,7 +35,7 @@ My first training session consists of 6 laps, I want these laps merged into one 
 ### Align ###
 
 The problem with the second and third session is that they do not start at kilometer 0 but at 5084.25km and 10232.9912km so they need to be aligned.
-The second training session was substracted the length of the first session (5084,25 meters):
+I substract the starting points from the relevant .tcx files:
 
 	saxon-xslt -s:Running-2013-8-5-lap-7.tcx -xsl:align.xsl align="5084.25000" > Running-2013-8-5.tcx
 	saxon-xslt -s:Running-2013-8-8-lap-9.tcx -xsl:align.xsl align="10232.9912" > Running-2013-8-5.tcx
