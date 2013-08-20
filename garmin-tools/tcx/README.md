@@ -40,3 +40,6 @@ The second trainng session was substracted the length of the first session (5084
 	saxon-xslt -s:Running-2013-8-5-lap-7.tcx -xsl:align.xsl align="5084.25000" > Running-2013-8-5.tcx
 
 I now have 3 valid .tcx files I can upload to my http://www.endomondo.com profile!
+
+## Requirements ##
+ * XSLT 2.0 processor (I use Saxon)
