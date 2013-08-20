@@ -23,7 +23,7 @@ In my example I ended up with these files:
 	Running-2013-8-4-lap-5.tcx
 	Running-2013-8-4-lap-6.tcx
 	Running-2013-8-5-lap-7.tcx
-	Running-2013-8-5-lap-8.tcx
+	Running-2013-8-8-lap-8.tcx
 	Running-2013-8-8-lap-9.tcx
 
 ### Merge ###
@@ -34,12 +34,15 @@ My first training session consists of 6 laps, I want these laps merged into one 
 
 ### Align ###
 
-The problem with the second and third session is that they do not start at kilometer 0 but at 5.084km and 10.230km so they need to be aligned.
-The second training session was substracted the length of the first session (5084.25 meters):
+The problem with the second and third session is that they do not start at kilometer 0 but at 5084.25km and 10232.9912km so they need to be aligned.
+The second training session was substracted the length of the first session (5084,25 meters):
 
 	saxon-xslt -s:Running-2013-8-5-lap-7.tcx -xsl:align.xsl align="5084.25000" > Running-2013-8-5.tcx
+	saxon-xslt -s:Running-2013-8-8-lap-9.tcx -xsl:align.xsl align="10232.9912" > Running-2013-8-5.tcx
 
 I now have 3 valid .tcx files I can upload to my http://www.endomondo.com profile!
+
+Lap 8 (file: Running-2013-8-8-lap-8.tcx) was a result of me double clicking the lap button on my watch and therefor it only lastet 2.39 seconds and had a distance of 0m so I just discharged that file.
 
 ## Requirements ##
  * XSLT 2.0 processor (I use Saxon)
