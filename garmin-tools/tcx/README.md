@@ -38,7 +38,7 @@ The problem with the second and third session is that they do not start at kilom
 I substract the starting points from the relevant .tcx files:
 
 	saxon-xslt -s:Running-2013-8-5-lap-7.tcx -xsl:align.xsl align="5084.25000" > Running-2013-8-5.tcx
-	saxon-xslt -s:Running-2013-8-8-lap-9.tcx -xsl:align.xsl align="10232.9912" > Running-2013-8-5.tcx
+	saxon-xslt -s:Running-2013-8-8-lap-9.tcx -xsl:align.xsl align="10232.9912" > Running-2013-8-8.tcx
 
 I now have 3 valid .tcx files I can upload to my http://www.endomondo.com profile!
 
