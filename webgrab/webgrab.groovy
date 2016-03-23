@@ -3,6 +3,7 @@
 /**
  * We need the Jsoup library for parsing web pages
  */
+@Grab('org.jsoup:jsoup:1.8.3')
 import org.jsoup.Jsoup
 
 def cli = new CliBuilder(usage:   "webgrab.groovy")
