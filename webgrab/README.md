@@ -4,11 +4,11 @@ WEBGRAB
 A small tool written in Groovy for extracting parts of an html document.
 
 ## Requirements ##
-* Groovy
-* Jsoup
+* Groovy (http://groovy-lang.org/)
+* Jsoup (http://jsoup.org/)
 
 ## Documentation ##
-"Modern" websites are often stuffed with content and commercial elements that not allways make them small screen friendly.
+"Modern" websites are often stuffed with content and commercial elements that not allways make them small-screen friendly.
 I wrote webgrab so I could easily extract relevant elements from a website.
 
 Imagine you are going to a conference and you would like to bring a copy of the schedule with you, but their website doesn't work very well on your mobilephone, what to do?
