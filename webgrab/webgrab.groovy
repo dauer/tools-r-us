@@ -6,10 +6,12 @@
 @Grab('org.jsoup:jsoup:1.8.3')
 import org.jsoup.Jsoup
 
-def cli = new CliBuilder(usage:   "webgrab.groovy")
-cli.u(args:1, argName: "url",     "Grab specified url")
-cli.e(args:1, argName: "element", "XPath/CSS selector for element to grab from html")
-cli.p(args:0, argName: "print",   "Select only print stylesheets")
+def cli = new CliBuilder(usage: "webgrab.groovy")
+cli.with {
+    u args:1, argName: "url",     "Grab specified url"
+    e args:1, argName: "element", "XPath/CSS selector for element to grab from html"
+    p args:0, argName: "print",   "Select only print stylesheets"
+}
 
 def options = cli.parse(args)
 if(!options.u || !options.e) {
