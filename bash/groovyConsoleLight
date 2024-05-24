@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# groovyConsole color theme and Ubuntu dark theme is not a good match...
+Exec=env GTK_THEME=adwaita:light ~/.sdkman/candidates/groovy/current/bin/groovyConsole
