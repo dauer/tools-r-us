@@ -7,7 +7,7 @@ These scripts create and runs a virtualized Kubuntu using [QEmu](https://www.qem
 The examples uses Kubuntu from an ISO file `kubuntu-25.04-desktop-amd64.iso`
 downloaded from [kubuntu.org](https://kubuntu.org/getkubuntu/).
 
-[Slide](https://dauer.github.io/qemu-lightning-talk/) from a lightning talk I
+[Slides](https://dauer.github.io/qemu-lightning-talk/) from a lightning talk I
 gave at my local [Linux User Group](http://flug.dk/).
 
 ## The scripts
@@ -22,10 +22,10 @@ and start the installation process.
 The script `./runKubuntu.sh` starts our virtualized Kubuntu image with the folder
 `./shared` mountet from the host into the virtual machine.
 
-### Run Kubuntu with a CDRom mountet
+### Run Kubuntu with a CD-Rom mountet
 
 Another quick way to get access to files from the host machine in the guest OS
-is to mount a CDRom. You can use the script `./runKubuntuCD.sh` for that.
+is to mount a CD-Rom. You can use the script `./runKubuntuCD.sh` for that.
 
 The script requires an ISO file named `./cd.iso` to exist, this can be created
 with the `./mkISO.sh` script. That script builds a Joliet CD image containing the
