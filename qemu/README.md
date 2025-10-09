@@ -1,6 +1,6 @@
 # QEmu examples
 
-These scripts create and runs a virtualized Kubuntu using QEmu
+These scripts create and runs a virtualized Kubuntu using [QEmu](https://www.qemu.org/)
 
 ## Introduction
 

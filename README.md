@@ -28,3 +28,8 @@ A small bash script for mounting my [Drobo](https://en.wikipedia.org/wiki/Drobo)
 The [groovyConsole](https://groovy-lang.org/groovyconsole.html) color theme is
 not working very well with Ubuntu Dark mode, this script starts groovyConsole
 with the light theme selected.
+
+## qemu
+
+Scripts for running a [QEmu](https://www.qemu.org/) virtualized
+[Kubuntu](https://kubuntu.org/)
