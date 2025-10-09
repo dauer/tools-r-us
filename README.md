@@ -1,29 +1,28 @@
-tools-r-us
-==========
+# tools-r-us
 
 Repository containing a collection of small tools (scripts) for solving various problems.
 
 Some of these projects might grow up one day and move in to their own repository...
 
-### webgrab ###
+## webgrab
 
 A small tool written in Groovy for extracting parts of an html document.
 
-### bash ###
+## bash
 
 Misc bash scripts for fixing stuff.
 
-#### fix-virtualbox.sh ####
+### fix-virtualbox.sh
 
 Every time I get a kernel upgrade Virtualbox breaks...
 
 This script fixes that problem.
 
-#### drobo.sh ####
+### drobo.sh
 
 A small bash script for mounting my [Drobo](https://en.wikipedia.org/wiki/Drobo) NAS.
 
-#### groovyConsoleLight ####
+### groovyConsoleLight
 
 The [groovyConsole](https://groovy-lang.org/groovyconsole.html) color theme is
 not working very well with Ubuntu Dark mode, this script starts groovyConsole
