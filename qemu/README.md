@@ -22,6 +22,9 @@ and start the installation process.
 The script `./runKubuntu.sh` starts our virtualized Kubuntu image with the folder
 `./shared` mountet from the host into the virtual machine.
 
+To access the shared folder from the guest, run the `guestMount.sh` script
+(from inside the guest OS).
+
 ### Run Kubuntu with a CD-Rom mountet
 
 Another quick way to get access to files from the host machine in the guest OS
