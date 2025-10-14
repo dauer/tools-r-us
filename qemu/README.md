@@ -1,6 +1,6 @@
 # QEmu examples
 
-These scripts create and runs a virtualized Kubuntu using [QEmu](https://www.qemu.org/)
+These scripts create and runs a virtualized Linux (Kubuntu) using [QEmu](https://www.qemu.org/)
 
 ## Introduction
 
@@ -31,8 +31,8 @@ Another quick way to get access to files from the host machine in the guest OS
 is to mount a CD-Rom. You can use the script `./runKubuntuCD.sh` for that.
 
 The script requires an ISO file named `./cd.iso` to exist, this can be created
-with the `./mkISO.sh` script. That script builds a Joliet CD image containing the
-files in the `./shared/` folder
+with the `./mkISO.sh` script. That script builds a [Joliet](https://en.wikipedia.org/wiki/ISO_9660#Joliet)
+CD image containing the files in the `./shared/` folder
 
 ## Todo
 
