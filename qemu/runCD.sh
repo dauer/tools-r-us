@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 #
 
-# Run with data ISO mountet
+# Run with data ISO (CDRom) mounted
 qemu-system-x86_64 -enable-kvm -cdrom ./cd.iso -boot menu=on \
-    -drive file=./Kubuntu.img \
+    -drive file=./disk.img \
     -m 4G -cpu host -smp 4 -vga virtio -display sdl,gl=on \
-
