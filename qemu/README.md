@@ -1,6 +1,6 @@
 # QEmu examples
 
-These scripts create and runs a virtual machines (Linux, Windows, Haiku, ...) using [QEmu](https://www.qemu.org/)
+These scripts create and runs a virtual machines (Linux, Windows, Haiku, FreeDos...) using [QEmu](https://www.qemu.org/)
 
 ## Introduction
 

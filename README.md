@@ -30,5 +30,4 @@ with the light theme selected.
 
 ## qemu
 
-Scripts for running a [QEmu](https://www.qemu.org/) virtualized
-[Kubuntu](https://kubuntu.org/)
+Scripts for running virtual machines using [QEmu](https://www.qemu.org/)
