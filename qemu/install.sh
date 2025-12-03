@@ -3,7 +3,7 @@
 
 # Create a 15Gb disk image to install to
 if [ ! -f disk.qcow ]; then
-  read -p "Create sidk image (y/n)? " -n 1 -r
+  read -p "Create disk image (y/n)? " -n 1 -r
   echo    # (optional) move to a new line
   if [[ $REPLY =~ ^[Yy]$ ]]
   then
