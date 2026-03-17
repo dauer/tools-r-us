@@ -31,3 +31,7 @@ with the light theme selected.
 ## qemu
 
 Scripts for running virtual machines using [QEmu](https://www.qemu.org/)
+
+## Grails plugins metadata
+
+Scripts for extracting statistics about [Grails plugins](https://grails.apache.org/plugins.html)
