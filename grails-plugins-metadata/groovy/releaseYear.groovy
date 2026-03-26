@@ -6,24 +6,24 @@
 
 import groovy.json.JsonSlurper
 import java.time.LocalDate
-import tech.tablesaw.plotly.Plot;
-import tech.tablesaw.api.Table;
-import tech.tablesaw.api.StringColumn;
-import tech.tablesaw.api.IntColumn;
-import tech.tablesaw.plotly.api.HorizontalBarPlot;
+import tech.tablesaw.plotly.Plot
+import tech.tablesaw.api.Table
+import tech.tablesaw.api.StringColumn
+import tech.tablesaw.api.IntColumn
+import tech.tablesaw.plotly.api.HorizontalBarPlot
 
 def slurper = new JsonSlurper()
 
-def url = new URL('https://raw.githubusercontent.com/apache/grails-plugins-metadata/refs/heads/main/grails-plugins-index.json')
+URL url = new URI('https://raw.githubusercontent.com/apache/grails-plugins-metadata/refs/heads/main/grails-plugins-index.json').toURL()
 def obj = slurper.parse(url)
 
 def result = GQ {
-    from o in obj select o.versions.first().date;
+    from o in obj select o.versions.first().date
 }
 
 List<LocalDate> datoer = []
 result.each {
-    LocalDate localDate = LocalDate.parse(it.toString().substring(0,4) + '-12-31')
+    LocalDate localDate = LocalDate.parse(it.toString().substring(0, 4) + '-12-31')
     datoer.add(localDate)
 }
 

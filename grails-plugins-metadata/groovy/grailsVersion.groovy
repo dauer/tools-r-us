@@ -14,7 +14,7 @@ import tech.tablesaw.plotly.traces.PieTrace
 import tech.tablesaw.api.IntColumn
 
 def slurper = new JsonSlurper()
-def url = new URL('https://raw.githubusercontent.com/apache/grails-plugins-metadata/refs/heads/main/grails-plugins-index.json')
+def url = new URI('https://raw.githubusercontent.com/apache/grails-plugins-metadata/refs/heads/main/grails-plugins-index.json').toURL()
 def data = slurper.parse(url)
 
 def pluginsMaxVersion = GQ {
@@ -46,4 +46,4 @@ PieTrace trace =
 
 Layout layout = Layout.builder().title("Plugins by max Grails version").build()
 
-Plot.show(new Figure(layout, trace));
+Plot.show(new Figure(layout, trace))
